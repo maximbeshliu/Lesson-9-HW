@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.conteiner{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.main-info h1,h2{ 
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 60px;
+color: #FFFFFF;
+}
+
+.main-info p{
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #FFFFFF;
+}
+
+button{
+    width: 250px;
+    height: 57px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #001958;
+}
+
+
+
+    @media only screen and (min-width: 360px) {
+
+
+        .main-info{
+            margin:8% 0 0 10%;
+            display: flex;
+            flex-flow: column;
+        }
+
+        img {
+            width: 48px;
+        }
+
+        .b-right{
+            visibility: hidden;
+        }
+
+        .backgroundimage{
+            background: radial-gradient(274.9% 369.39% at 78.33% -2.33%, 
+            rgba(0, 25, 88, 0) 0%, #000000 100%), url(./Rectangle.png) 60% 5%;
+            height: 75vh;
+        }
+
+        .bottom-block h1 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 45px;
+            color: #001958;
+            text-align: center;
+            margin: 0 16%;
+        }
+    
+          .numbers{
+              display: flex;
+              flex-flow: column;
+        }
+    
+           .numbers div{
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+            }
+    
+            .word{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: #4F4F4F;
+            }
+    
+            .number{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 50px;
+                line-height: 75px;
+                color: #828282;
+            }
+
+           
+
+    }
+
+    @media only screen and (min-width: 768px){
+
+        .main-info{
+            margin:5% 0 0 10%;
+            display: flex;
+            flex-flow: row;
+        }
+
+        img {
+            height: 120px;
+            margin: 1.5% 3% 0 0;
+        }
+
+        .b-right{
+            visibility: hidden;
+        }
+
+        .backgroundimage{
+            background: radial-gradient(86.94% 263.61% at 96.08% 15.9%, 
+            rgba(0, 25, 88, 0) 0%, #000000 100%), url(./Rectangle.png) 30% 10%;
+            height: 70vh;
+
+        }
+
+        .bottom-block h1 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 60px;
+            color: #001958;
+            text-align: center;
+            margin:0;
+        }
+    
+          .numbers{
+              display: flex;
+              flex-flow: row;
+              flex-wrap: wrap;
+              justify-content: space-between;
+        }
+    
+           .numbers div{
+            display: flex;
+            flex-flow: column;
+            margin: 0 80px 0 80px;
+            }
+    
+            .word{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: #4F4F4F;
+            }
+    
+            .number{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 50px;
+                line-height: 75px;
+                color: #828282;
+            }
+    }
+
+    @media only screen and (min-width: 1024px){
+
+        .main-info{
+            margin:5% 0 0 10%;
+            padding-right: 20% ;
+            display: flex;
+            flex-flow: row;
+        }
+
+        img {
+            height: 120px;
+            margin: 1.5% 3% 0 0;
+        }
+
+        .b-right{
+            position: relative;
+            left:290%;
+            bottom: 15%;
+            visibility: visible;
+        }
+
+    .backgroundimage{
+    background: radial-gradient(86.94% 263.61% at 96.08% 15.9%, 
+    rgba(0, 25, 88, 0) 0%, #000000 100%), url(./Rectangle.png) no-repeat 100% 1%;
+    height: 80vh;
+    }
+
+    .bottom-block{
+        height: 20%;
+    }
+    .bottom-block h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 60px;
+        color: #001958;
+        text-align: center;
+        margin:0;
+    }
+
+      .numbers{
+          display: flex;
+          flex-flow: row;
+          justify-content: space-around;
+    }
+
+       .numbers div{
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        }
+
+        .word{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #4F4F4F;
+        }
+
+        .number{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 75px;
+            color: #828282;
+        }
+    }
