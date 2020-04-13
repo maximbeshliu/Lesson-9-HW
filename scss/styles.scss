@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$main-font: Poppins;
+$weight-bold: bold;
+$weight-normal: normal;
+$h-fsize: 40px;
+$p-fsize: 20px;
+$line-height: 60px;
+$main-fstyle: normal;
+$main-info-color: #ffffff;
+
+@import "responsive-design";
+
+@media (min-width: 360px) {
+  @include screen360;
+}
+
+@media (min-width: 768px) {
+  @include screen768;
+}
+
+@media (min-width: 1024px) {
+  @include screen1024;
+}
+
+.conteiner {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+
+  .backgroundimage {
+    .main-info {
+      margin-bottom: 20px;
+
+      h1,
+      h2 {
+        font: {
+          family: $main-font;
+          style: $main-fstyle;
+          weight: $weight-bold;
+          size: $h-fsize;
+        }
+        height: $line-height;
+        color: $main-info-color;
+      }
+
+      p {
+        font-family: $main-font;
+        font-style: $main-fstyle;
+        font-weight: 600;
+        font-size: $p-fsize;
+        line-height: 30px;
+        color: $main-info-color;
+      }
+    }
+
+    button {
+      width: 250px;
+      height: 57px;
+      background: #ffffff;
+      border-radius: 100px;
+      font-family: $main-font;
+      font-style: $main-fstyle;
+      font-weight: 600;
+      font-size: $p-fsize;
+      line-height: 30px;
+      color: #001958;
+    }
+  }
+
+  .bottom-block {
+    h1 {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: $weight-bold;
+      font-size: $h-fsize;
+      line-height: $line-height;
+      color: #001958;
+      text-align: center;
+      margin: 0;
+    }
+
+    .numbers {
+      div {
+        .word {
+          font-family: $main-font;
+          font-style: $main-fstyle;
+          font-weight: 500;
+          font-size: $p-fsize;
+          line-height: 30px;
+          color: #4f4f4f;
+        }
+
+        .number {
+          font-family: $main-font;
+          font-style: $main-fstyle;
+          font-weight: $weight-bold;
+          font-size: 50px;
+          line-height: 75px;
+          color: #828282;
+        }
+      }
+    }
+  }
+}

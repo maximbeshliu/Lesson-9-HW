@@ -1,0 +1,120 @@
+@mixin screen360 {
+  .backgroundimage {
+    background: radial-gradient(
+        86.94% 263.61% at 96.08% 15.9%,
+        rgba(0, 25, 88, 0) 0%,
+        #000000 100%
+      ),
+      url(Rectangle.png) 60% 5%;
+  }
+
+  .main-info {
+    margin: 8% 0 0 10%;
+    display: flex;
+    flex-flow: column;
+  }
+
+  img {
+    width: 48px;
+  }
+
+  .b-right {
+    visibility: hidden;
+  }
+
+  .numbers {
+    display: flex;
+    flex-flow: column;
+
+    div {
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+    }
+  }
+}
+
+@mixin screen768 {
+  .backgroundimage {
+    background: radial-gradient(
+        86.94% 263.61% at 96.08% 15.9%,
+        rgba(0, 25, 88, 0) 0%,
+        #000000 100%
+      ),
+      url(Rectangle.png) 30% 10%;
+  }
+
+  .main-info {
+    margin: 5% 0 0 10%;
+    display: flex;
+    flex-flow: row;
+  }
+
+  img {
+    height: 120px;
+    margin: 1.5% 3% 0 0;
+  }
+
+  .b-right {
+    visibility: hidden;
+  }
+
+  .numbers {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      flex-flow: column;
+      margin: 0 80px 0 80px;
+    }
+  }
+}
+
+@mixin screen1024 {
+  .main-info {
+    margin: 5% 0 0 10%;
+    padding-right: 20%;
+    display: flex;
+    flex-flow: row;
+  }
+
+  img {
+    height: 120px;
+    margin: 1.5% 3% 0 0;
+  }
+
+  .b-right {
+    position: relative;
+    left: 290%;
+    bottom: 15%;
+    visibility: visible;
+  }
+
+  .backgroundimage {
+    background: radial-gradient(
+        86.94% 263.61% at 96.08% 15.9%,
+        rgba(0, 25, 88, 0) 0%,
+        #000000 100%
+      ),
+      url(Rectangle.png) no-repeat 100% 1%;
+  }
+
+  .bottom-block {
+    height: 20%;
+
+    .numbers {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+
+      div {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+      }
+    }
+  }
+}
