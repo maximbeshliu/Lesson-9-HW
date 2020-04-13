@@ -1,0 +1,24 @@
+{
+  "name": "homework9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximbeshliu/Lesson-9-HW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximbeshliu/Lesson-9-HW/issues"
+  },
+  "homepage": "https://github.com/maximbeshliu/Lesson-9-HW#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
